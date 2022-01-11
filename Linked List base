@@ -1,0 +1,22 @@
+import java.util.*;
+
+ class linked {
+private static Integer remove;
+private static boolean add;
+
+public static void main(String args[]) {
+
+    LinkedList<Integer> ll=new LinkedList<>();// linked list making 
+    //adding elements 
+        ll.add(10);
+add = ll.add(90);
+ll.addLast(11);
+ll.addFirst(12);
+ll.add(2,15);
+System.out.println(ll);
+ll.remove(11);
+remove = ll.remove(90);
+ll.remove(12);
+System.out.println(ll);
+}    
+}

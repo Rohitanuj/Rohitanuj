@@ -15,26 +15,7 @@ public class DeleteMid {
     private static final String rList = null;
         static Node head;
         Node tail=null;
-      
-   
-        
-         public void addNode(int data){
-            Node newNode=new Node(data);
-            if(head==null){
-                head=tail=newNode;
-                head.previous=null;
-
-                tail.next=null;
-            }
-            else {
-            tail.next=newNode;
-            newNode.previous=tail;
-            tail=newNode;
-                tail.next=null;
-            }
-        size++;
-         }
-         public void deletemid(){
+        public void deletemid(){
             if(head==null){
                 return;
             }
@@ -59,6 +40,49 @@ public class DeleteMid {
             }
             size--;
                 }
+   
+        
+         public void addNode(int data){
+            Node newNode=new Node(data);
+            if(head==null){
+                head=tail=newNode;
+                head.previous=null;
+
+                tail.next=null;
+            }
+            else {
+            tail.next=newNode;
+            newNode.previous=tail;
+            tail=newNode;
+                tail.next=null;
+            }
+        size++;
+         }
+  /*       public void deletemid(){
+            if(head==null){
+                return;
+            }
+            else {
+              Node  current=head;
+                int mid=(size%2==0)?(size/2):((size+1)/2);
+
+                for(int i=1;i<mid;i++){
+                    current=current.next;
+                }
+                if(current==head){
+                    head=current.next;
+                }
+            else if(current==tail){
+                tail=tail.previous;
+            }
+            else {
+                current.previous.next=current.next;
+                current.next.previous=current.previous;
+            }
+            current=null;
+            }
+            size--;
+                }*/
             
          public void display(){
     Node current=head;
@@ -68,7 +92,7 @@ public class DeleteMid {
             else    {
                 while(current!=null)
                         {
-                           System.out.print(current.data+"-->");
+                           System.out.println(current.data+"-->");
                             current=current.next;
                         }
 
@@ -82,8 +106,8 @@ public class DeleteMid {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter");
          a=input.nextInt();
-      for(int i=1;i<a;i++){
-        System.out.print("Node Index"+i);
+      for(int i=1;i<=a;i++){
+        System.out.print("Node Index "+i+" -:");
         n=input.nextInt();
   //      System.out.print("Node Index"+i);
        rList.addNode(n);

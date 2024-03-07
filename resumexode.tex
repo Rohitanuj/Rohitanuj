@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2.5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape ROHIT KUMAR} \\ \vspace{.5 em}
+    KIET Group of Institutions, Ghaziabad, 201206 \\ \vspace{.5em}
+    \small \raisebox{-0.5em\height}\faPhone\ 99580229633 ~ \href{mailto:x@gmail.com}{\raisebox{-0.1em\height}\faEnvelope\  \underline{anujrohitkumar3010@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/rohit-kumar-77559b204/}}  ~
+    \href{https://leetcode.com/anujrohitkumar3010/}{https://leetcode.com/anujrohitkumar3010/}
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{ https://github.com/Rohitanuj}}
+    \vspace{-2em}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KIET Group of Institutions, Ghaziabad}{Nov 2020 -- May 2024}
+      {Bachelor of Technology in Computer Science}{Ghaziabad, UP}
+  \resumeSubHeadingListEnd
+   \resumeSubheading
+      {AMRIT PUBLIC SCHOOL}{2017 -- 2019}
+      {Intermediate}{Mau, UP}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Software Engineering
+                \item Algorithms and Analysis
+                \item Database Management System
+                \item Computer Networks
+                \item Operating System
+            \end{itemize}
+        \end{multicols}
+        \vspace*{1.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cisco Virtual Internship}{May 2023 -- August 2023}
+      {Intern}{Virtual}
+      \resumeItemListStart
+        \resumeItem{Completed Modules on Cloud Security, Introduction to CyberSecurity, Introduction to Packet Tracer, Cybersecurity essentials.Conducted Study on the imaginary Network, evaluated its vulnerability and Developed solution Network overcoming its weakness.}
+        \resumeItem{As a Final deliverable for Project, Implemented a Network in Cisco Packet Tracer. Composed a PPT explaining the modules used in that network in depth.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {CPI-D Internship}{Aug 2022 -- August 2022}
+      {Intern}{KIET,Ghaziabad}
+      \resumeItemListStart
+        \resumeItem{Learned About Java Programming and OOPS Concepts.Completed Mooc Course on Great Learning Namely OOPS By Great Learning.}
+        \resumeItem{Build a GUI Based Application, Namely Temperature Converter.This was Created on Netbeans IDE 15 Harnessing Learnings of Internship.}
+        \vspace{-3.0em}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{+1.em}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-0.5em}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading{\textbf{MySQL Injection Prevention } $|$ \emph{PHP,React,Adobe,MySQL}}{Aug 2023-Ongoing}
+          \resumeItemListStart
+          
+            \resumeItem{This is Group Project. Devloped Front End of the Project Using HTML,CSS AND JS.}
+            \resumeItem{Project aim to provide effective Waste Management. Concept is Implemented Using IOT}
+            \resumeItem{Aim is to track the Fill level of trash cans and use that information to automate the Process of Waste Management. }
+          \resumeItemListEnd
+          \vspace{-1em}
+      \resumeProjectHeading
+          {\textbf{Avon: MyFood App Website} $|$ \emph{HTML,CSS,JS,React,VS CODE}}{Feb 2023-Apr 2023}
+          \resumeItemListStart
+            \resumeItem{Devised the Front End of Food Ordering Website using HTML, CSS AND JAVASCRIPT.}
+            \resumeItem{Focused on responsive Web design and Cross Devices Compatibility.}
+            \resumeItem{As a front end website, it focuses on User interface and User Experience. Used Fontawesome icons to improve Look and functionality.}
+          \resumeItemListEnd
+          \vspace{-1.0em}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java Basics, HTML/CSS, JavaScript, MySQL,Python ,GoLang} \\
+     \textbf{Developer Tools}{: VS Code, Github , Google Cloud Platform,NetBeans IDE, Py Charm} \\
+     \textbf{Miscellaneous}{:Cloud Computing Essentials, Cybersecurity Basics} \\
+    }}
+ \end{itemize}
+ \vspace{-1em}
+%-----------PROGRAMMING SKILLS-----------
+\section{Achievements/Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \resumeItemListStart
+            \resumeItem{●350+ problems on Leetcode/Secured 2663th Rank in Leetcode Weekly contest 342 }
+            \resumeItem{●5 star in Problem solving and in JAVA on HackerRank}
+            \resumeItem{●CERTIFICATION 1: Data Structures - by University of California San Diego and offered through Coursera. (06/2023).}
+            \resumeItem{●CERTIFICATION 2:Algorithmic Toolbox - by University of California San Diego and offered through Coursera.(2021)}
+            \resumeItem{●CERTIFICATION 3:Java Programming: Solving Problems with Software- by Duke University and offered through Coursera.(2021)}
+            \resumeItem●CERTIFICATION 4: Object Oriented Programming by UC San Diego on Coursera(2022)
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+\vspace{-1em}
+\end{document}
